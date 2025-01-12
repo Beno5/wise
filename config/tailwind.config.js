@@ -6,7 +6,7 @@ module.exports = {
     './app/helpers/**/*.rb',
     './app/javascript/**/*.js',
     './app/views/**/*.{erb,haml,html,slim}',
-    "./dist/**/*.html", // Dodato iz template config-a
+    './dist/**/*.html', // Dodato iz template config-a
   ],
   darkMode: 'class', // Održi dark mode opciju iz template-a
   theme: {
@@ -16,7 +16,7 @@ module.exports = {
       'SpaceGrotesk': ['Space Grotesk', 'sans-serif'],
       'Manrope': ['Manrope', 'sans-serif'],
       'Unicons': ['Unicons'],
-      'Monospace': ['SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', "Liberation Mono", "Courier New", 'monospace'],
+      'Monospace': ['SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace'],
       'Custom': ['Custom'],
       'DMSerif': ['DM Serif Display'],
       'SansSerif': ['sans-serif'],
@@ -29,20 +29,20 @@ module.exports = {
     },
     extend: {
       screens: {
-        'xxl': { 'min': '1400px' },
-        'xl': { 'min': '1200px' },
-        'lg': { 'min': '992px', 'max': '1199.98px' },
-        'md': { 'min': '768px', 'max': '991.98px' },
-        'sm': { 'min': '576px', 'max': '767.98px' },
-        'xsm': { 'max': '575.98px' },
+        xxl: { min: '1400px' },
+        xl: { min: '1200px' },
+        lg: { min: '992px', max: '1199.98px' },
+        md: { min: '768px', max: '991.98px' },
+        sm: { min: '576px', max: '767.98px' },
+        xsm: { max: '575.98px' },
+      },
+      margin: {
+        '4p': '4%',
+        '6p': '6%',
       },
     },
   },
   plugins: [
-    // Možeš dodati ili ukloniti pluginove po potrebi
-    // require('@tailwindcss/forms'),
-    // require('@tailwindcss/typography'),
-    // require('@tailwindcss/container-queries'),
     function ({ addComponents }) {
       addComponents({
         '.container': {
@@ -52,8 +52,8 @@ module.exports = {
           '@screen lg': { maxWidth: '960px' },
           '@screen xl': { maxWidth: '1140px' },
           '@screen xxl': { maxWidth: '1320px' },
-        }
-      })
-    }
+        },
+      });
+    },
   ],
-}
+};

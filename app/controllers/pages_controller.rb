@@ -6,6 +6,7 @@ class PagesController < ApplicationController
   end
 
   def projects
+    @projects = [1, 2]
   end
 
   def partnership
