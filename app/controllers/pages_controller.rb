@@ -5,10 +5,6 @@ class PagesController < ApplicationController
   def about_us
   end
 
-  def projects
-    @projects = [1, 2]
-  end
-
   def partnership
   end
 

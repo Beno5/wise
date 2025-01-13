@@ -7,7 +7,6 @@ var theme = {
    * Do not forget to remove dependency from src/js/vendor/ and recompile.
    */
   init: function () {
-    theme.stickyHeader();
     theme.subMenu();
     theme.offCanvas();
     theme.isotope();
@@ -19,7 +18,6 @@ var theme = {
     theme.backgroundImageMobile();
     theme.imageHoverOverlay();
     theme.rellax();
-    theme.scrollCue();
     theme.swiperSlider();
     theme.lightbox();
     theme.plyr();
@@ -30,38 +28,17 @@ var theme = {
     theme.bsTooltips();
     theme.bsPopovers();
     theme.bsModal();
-    theme.iTooltip();
     theme.forms();
     theme.passVisibility();
     theme.pricingSwitcher();
     theme.textRotator();
-    theme.codeSnippet();
   },
   /**
    * Sticky Header
    * Enables sticky behavior on navbar on page scroll
    * Requires assets/js/vendor/headhesive.min.js
   */
-  stickyHeader: () => {
-    var navbar = document.querySelector(".navbar");
-    if (navbar == null) return;
-    var options = {
-      offset: 350,
-      offsetSide: 'top',
-      classes: {
-        clone: 'navbar-clone fixed',
-        stick: 'navbar-stick',
-        unstick: 'navbar-unstick',
-      },
-      onStick: function() {
-        var navbarClonedClass = this.clonedElem.classList;
-        if (navbarClonedClass.contains('transparent') && navbarClonedClass.contains('navbar-dark')) {
-          this.clonedElem.className = this.clonedElem.className.replace("navbar-dark","navbar-light");
-        }
-      }
-    };
-    var banner = new Headhesive('.navbar', options);
-  },
+  
   /**
    * Sub Menus
    * Enables multilevel dropdown

@@ -13928,6 +13928,25 @@ blockquote.accordion-wrapper .card-header button {
   padding-right: 0px;
 }
 
+.accordion-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.accordion-button .icon i {
+  font-size: 1rem;
+}
+
+.accordion-button[aria-expanded="true"] .icon {
+  transform: rotate(180deg); /* Rotacija za otvoreni accordion */
+}
+
+.accordion-button .icon {
+  transform: rotate(0deg); /* Zatvoreni accordion */
+}
+
 .accordion-item.icon button::before {
   content: var(--tw-content);
   display: none;

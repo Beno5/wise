@@ -25,7 +25,7 @@
           <div>
             <%= mail_to 'info@wise.com', 'info@wise.com', class: 'link-inverse' %>
             <br>
-             00 (123) 456 78 90 <br>
+            +43 6704049129<br>
             <nav class="nav social social-white mt-4">
               <%= link_to '#', class: "text-[#cacaca] text-[1rem]" do %>
                 <i class="uil uil-twitter !text-white text-[1rem]"></i>
@@ -44,7 +44,9 @@
     <div class="navbar-other w-full !flex !ml-auto">
       <ul class="navbar-nav !flex-row !items-center !ml-auto">
         <li class="nav-item dropdown language-select uppercase group">
-          <%= link_to '#', class: "nav-link dropdown-item dropdown-toggle after:!text-[#605dba]" do %>En<% end %>
+          <%= link_to '#', class: "nav-link dropdown-toggle", data: { bs_toggle: "dropdown" }, role: "button", aria: { expanded: "false" } do %>
+            En
+          <% end %>
           <ul class="dropdown-menu">
             <li class="nav-item"><%= link_to 'English', '#', class: "dropdown-item hover:!text-[#605dba]" %></li>
             <li class="nav-item"><%= link_to 'Deutsch', '#', class: "dropdown-item hover:!text-[#605dba]" %></li>
@@ -57,7 +59,9 @@
           <% end %>
         </li>
         <li class="nav-item xl:hidden lg:hidden">
-          <button class="hamburger offcanvas-nav-btn"><span></span></button>
+          <button class="hamburger offcanvas-nav-btn" data-bs-toggle="offcanvas" data-bs-target=".offcanvas-nav">
+            <span></span>
+          </button>
         </li>
       </ul>
     </div>
