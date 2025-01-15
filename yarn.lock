@@ -342,6 +342,11 @@ hasown@^2.0.2:
   dependencies:
     function-bind "^1.1.2"
 
+headhesive@^1.2.4:
+  version "1.2.4"
+  resolved "https://registry.npmjs.org/headhesive/-/headhesive-1.2.4.tgz"
+  integrity sha512-0X9Va2xx4sZj6gpiYK/+YYvC2BFV8UFzc/rBE21WPc99eT5MbZER/VRvR6aBoarJuG1PKY0mSp0GKQfjBEJQ4w==
+
 is-binary-path@~2.1.0:
   version "2.1.0"
   resolved "https://registry.npmjs.org/is-binary-path/-/is-binary-path-2.1.0.tgz"

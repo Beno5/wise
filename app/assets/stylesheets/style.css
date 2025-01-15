@@ -15336,7 +15336,7 @@ blockquote.swiper-controls .swiper-navigation .swiper-button {
 }
 
 img.svg-inject {
-  visibility: hidden;
+  visibility: show;
 }
 
 .icon-svg {

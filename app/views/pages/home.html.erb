@@ -45,77 +45,163 @@
   </section>
   <section class="wrapper !bg-[#ffffff]">
     <div class="container pt-20 xl:pt-28 lg:pt-28 md:pt-28 pb-16 xl:pb-20 lg:pb-20 md:pb-20">
-      <div class="flex flex-wrap mx-[-15px] xl:mx-[-35px] lg:mx-[-20px] mt-[-50px] items-center">
-        <div class="xl:w-7/12 lg:w-7/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] mt-[50px] max-w-full xl:!order-2 lg:!order-2">
-          <%= image_tag("illustrations/i2.png", class: "w-auto", alt: "image") %>
+      <div class="flex flex-wrap mx-[-15px]">
+        <div class="xl:w-10/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto">
+          <div class="card image-wrapper bg-full bg-image bg-overlay bg-overlay-400 text-white mt-[-1.25rem] xl:!mt-0 lg:!mt-0  xl:-translate-y-2/4 lg:-translate-y-2/4 bg-cover [background-size:100%] bg-[center_center] bg-no-repeat !bg-scroll !relative z-0 before:rounded-[0.4rem] before:bg-[rgba(30,34,40,.4)] before:content-[''] before:block before:absolute before:z-[1] before:w-full before:h-full before:left-0 before:top-0" style="background-image: url('<%= asset_path("photos/bg23.png") %>');">
+            <div class="card-body !p-10 xl:!p-14">
+              <div class="flex flex-wrap mx-[-15px] !text-center">
+                <div class="xl:w-12/12 xxl:w-12/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto">
+                  <h2 class="text-[0.8rem] !leading-[1.35] uppercase text-white !mb-3">Our Vision</h2>
+                  <h3 class="text-[calc(1.265rem_+_0.18vw)] font-bold xl:text-[1.4rem] !leading-[1.35] !mb-6 xl:!mb-0 lg:!mb-0 text-white">We envision a world where women of all ages, backgrounds, and experiences can reach their potential to create sustainable, independent futures.</h3>
+                </div>
+                <!--/.card-body -->
+              </div>
+              <!--/.card -->
+            </div>
+            <!-- /column -->
+          </div>
+          <!-- /.row -->
         </div>
-        <!--/column -->
-        <div class="xl:w-5/12 lg:w-5/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] mt-[50px] max-w-full">
-          <h2 class="!text-[.75rem] uppercase text-line relative align-top pl-[1.4rem] inline-flex tracking-[0.02rem] leading-[1.35] before:content-[''] before:absolute before:inline-block before:translate-y-[-60%] before:w-3 before:h-[0.05rem] before:left-0 before:top-2/4 before:bg-[#3f78e0] text-[#3f78e0] !mb-3">Why Choose Us?</h2>
-          <h3 class="text-[calc(1.285rem_+_0.42vw)] font-bold xl:text-[1.6rem] !leading-[1.3] mb-7">A few reasons why our valued customers choose us.</h3>
-          <div class="accordion accordion-wrapper" id="accordionExample">
-            <!-- Accordion Item 1 -->
-            <div class="card plain accordion-item">
-              <div class="card-header !mb-0 !p-[0_0_.8rem_0] !border-0 !bg-inherit" id="headingOne">
-                <button class="accordion-button flex items-center justify-between w-full !p-[0_0_0_1.1rem] !text-[.85rem]" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  What We Believe
-                  <span class="icon transition-transform duration-300 ease-in-out">
-                    <i class="uil uil-angle-down"></i>
-                  </span>
-                </button>
-              </div>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <div class="card-body flex-[1_1_auto] pb-4 xl:p-[2rem_2.5rem_1.25rem] lg:p-[2rem_2.5rem_1.25rem] md:p-[2rem_2.5rem_1.25rem]">
-                  <p>At WISE, we believe in the transformative power of women’s potential. Like the owl, a universal symbol of wisdom and insight, we strive to empower women to nurture their intelligence, creativity, and capacities. Our efforts are dedicated to the empowerment of women through skills development, entrepreneurship, and meaningful support.</p>
-                </div>
-              </div>
+      </section>
+      <!-- /section -->
+      <section class="wrapper !bg-[#ffffff]">
+        <div class="container pt-32 xl:pt-40 lg:pt-40 md:pt-40 pb-[4.5rem] xl:pb-24 lg:pb-24 md:pb-24">
+          <div class="flex flex-wrap mx-[-15px] !text-center">
+            <div class="lg:w-10/12 xl:w-9/12 xxl:w-8/12 flex-[0_0_auto] px-[15px] max-w-full !mx-auto !relative">
+              <%= image_tag("svg/doodle3.svg", class: "!h-[3rem] absolute hidden xl:block lg:block", style: "top: -45%; left: 23%", alt: "image") %>
+              <%= image_tag("svg/doodle4.svg", class: "h-8 absolute hidden xl:block lg:block", style: "top: 6%; right: 2%", alt: "image") %>
+              <h3 class="xl:text-[2rem] text-[calc(1.325rem_+_0.9vw)] font-semibold !leading-[1.2] mb-12 lg:!px-5 xl:!px-0 xxl:!px-6">Sandbox makes your spending <span class="text-gradient gradient-7">stress-free</span> for you to have the perfect control.</h3>
             </div>
-            <div class="card plain accordion-item">
-              <div class="card-header !mb-0 !p-[0_0_.8rem_0] !border-0 !bg-inherit" id="headingTwo">
-                <button class="accordion-button flex items-center justify-between w-full !p-[0_0_0_1.1rem] !text-[.85rem]" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Our Journey
-                  <span class="icon transition-transform duration-300 ease-in-out">
-                    <i class="uil uil-angle-down"></i>
-                  </span>
-                </button>
-              </div>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                <div class="card-body flex-[1_1_auto] pb-4 xl:p-[2rem_2.5rem_1.25rem] lg:p-[2rem_2.5rem_1.25rem] md:p-[2rem_2.5rem_1.25rem]">
-                  <p>Our journey began many years ago as an informal initiative, bringing together women from diverse backgrounds through gatherings, online meetups, and collaborative support. We organized workshops, shared resources, and created a network where women could access guidance and exchange knowledge. Through these efforts, we helped women develop new skills, build confidence, and strengthen their entrepreneurial spirit.</p>
+          </div>
+          <div class="flex flex-wrap mx-[-15px] mb-40">
+            <div class="xxl:w-11/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto">
+              <div class="flex flex-wrap mx-[-15px] xl:mx-[-20px] lg:mx-[-20px] md:mx-[-20px] mt-[-50px] !text-center">
+                <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[50px] max-w-full">
+                  <div class="svg-bg svg-bg-lg !bg-[#fef3e4] !rounded-[0.8rem] mb-4">
+                    <%= image_tag("icons/solid/briefcase.svg", class: "svg-inject icon-svg solid text-[#343f52] text-navy", alt: "image") %>
+                  </div>
+                  <h4 class="text-[1rem]">Entrepreneurship Support</h4>
                 </div>
-              </div>
-            </div>
-            <div class="card plain accordion-item">
-              <div class="card-header !mb-0 !p-[0_0_.8rem_0] !border-0 !bg-inherit" id="headingThree">
-                <button class="accordion-button flex items-center justify-between w-full !p-[0_0_0_1.1rem] !text-[.85rem]" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Your Path With WISE
-                  <span class="icon transition-transform duration-300 ease-in-out">
-                    <i class="uil uil-angle-down"></i>
-                  </span>
-                </button>
-              </div>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                <div class="card-body flex-[1_1_auto] pb-4 xl:p-[2rem_2.5rem_1.25rem] lg:p-[2rem_2.5rem_1.25rem] md:p-[2rem_2.5rem_1.25rem]">
-                  <p>Whether you’re a young woman eager to explore entrepreneurial opportunities, an individual seeking to expand your skills, or a community partner, WISE is your platform for growth, innovation, and connection. We are committed to helping women realize their potential and build sustainable, independent futures.</p>
+                <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[50px] max-w-full">
+                  <div class="svg-bg svg-bg-lg bg-[#e1f6f0] !rounded-[0.8rem] mb-4">
+                    <%= image_tag("icons/lineal/light-bulb.svg", class: "svg-inject icon-svg solid text-[#343f52] text-navy", alt: "image") %>
+                  </div>
+                  <h4 class="text-[1rem]">Skills Development</h4>
+                </div>
+                <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[50px] max-w-full">
+                  <div class="svg-bg svg-bg-lg bg-[#e9eaf8] !rounded-[0.8rem] mb-4">
+                    <%= image_tag("icons/lineal/handshake.svg", class: "svg-inject icon-svg solid text-[#343f52] text-navy", alt: "image") %>
+                  </div>
+                  <h4 class="text-[1rem]">Mentorship Programs</h4>
+                </div>
+                <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[50px] max-w-full">
+                  <div class="svg-bg svg-bg-lg bg-[#f8e7ec] !rounded-[0.8rem] mb-4">
+                    <%= image_tag("icons/lineal/networking.svg", class: "svg-inject icon-svg solid text-[#343f52] text-navy", alt: "image") %>
+                  </div>
+                  <h4 class="text-[1rem]">Networking Opportunities</h4>
+                </div>
+                <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[50px] max-w-full">
+                  <div class="svg-bg svg-bg-lg bg-[#f0eaf6] !rounded-[0.8rem] mb-4">
+                    <%= image_tag("icons/lineal/tools.svg", class: "svg-inject icon-svg solid text-[#343f52] text-navy", alt: "image") %>
+                  </div>
+                  <h4 class="text-[1rem]">Resources & Tools</h4>
+                </div>
+                <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[50px] max-w-full">
+                  <div class="svg-bg svg-bg-lg bg-[#feece9] !rounded-[0.8rem] mb-4">
+                    <%= image_tag("icons/solid/medal.svg", class: "svg-inject icon-svg solid text-[#343f52] text-navy", alt: "image") %>
+                  </div>
+                  <h4 class="text-[1rem]">Success Stories</h4>
+                </div>
+                <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[50px] max-w-full">
+                  <div class="svg-bg svg-bg-lg bg-[#e0e9fa] !rounded-[0.8rem] mb-4">
+                    <%= image_tag("icons/lineal/group-2.svg", class: "svg-inject icon-svg solid text-[#343f52] text-navy", alt: "image") %>
+                  </div>
+                  <h4 class="text-[1rem]">Community Engagement</h4>
+                </div>
+                <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[50px] max-w-full">
+                  <div class="svg-bg svg-bg-lg !bg-[#eaf3ef] !rounded-[0.8rem] mb-4">
+                    <%= image_tag("icons/lineal/megaphone.svg", class: "svg-inject icon-svg solid text-[#343f52] text-navy", alt: "image") %>
+                  </div>
+                  <h4 class="text-[1rem]">Advocacy & Awareness</h4>
                 </div>
               </div>
             </div>
           </div>
-          <!--/.accordion -->
         </div>
-        <!--/column -->
-      </div>
-      <!--/.row -->
+      </section>
+      <section class="wrapper !bg-[#ffffff]">
+        <div class="container pt-20 xl:pt-28 lg:pt-28 md:pt-28 pb-16 xl:pb-20 lg:pb-20 md:pb-20">
+          <div class="flex flex-wrap mx-[-15px] xl:mx-[-35px] lg:mx-[-20px] mt-[-50px] items-center">
+            <div class="xl:w-7/12 lg:w-7/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] mt-[50px] max-w-full xl:!order-2 lg:!order-2">
+              <%= image_tag("illustrations/i2.png", class: "w-auto", alt: "image") %>
+            </div>
+            <!--/column -->
+            <div class="xl:w-5/12 lg:w-5/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] mt-[50px] max-w-full">
+              <h2 class="!text-[.75rem] uppercase text-line relative align-top pl-[1.4rem] inline-flex tracking-[0.02rem] leading-[1.35] before:content-[''] before:absolute before:inline-block before:translate-y-[-60%] before:w-3 before:h-[0.05rem] before:left-0 before:top-2/4 before:bg-[#3f78e0] text-[#3f78e0] !mb-3">Why Choose Us?</h2>
+              <h3 class="text-[calc(1.285rem_+_0.42vw)] font-bold xl:text-[1.6rem] !leading-[1.3] mb-7">A few reasons why our valued customers choose us.</h3>
+              <div class="accordion accordion-wrapper" id="accordionExample">
+                <!-- Accordion Item 1 -->
+                <div class="card plain accordion-item">
+                  <div class="card-header !mb-0 !p-[0_0_.8rem_0] !border-0 !bg-inherit" id="headingOne">
+                    <button class="accordion-button flex items-center justify-between w-full !p-[0_0_0_1.1rem] !text-[.85rem]" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      What We Believe
+                      <span class="icon transition-transform duration-300 ease-in-out">
+                        <i class="uil uil-angle-down"></i>
+                      </span>
+                    </button>
+                  </div>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="card-body flex-[1_1_auto] pb-4 xl:p-[2rem_2.5rem_1.25rem] lg:p-[2rem_2.5rem_1.25rem] md:p-[2rem_2.5rem_1.25rem]">
+                      <p>At WISE, we believe in the transformative power of women’s potential. Like the owl, a universal symbol of wisdom and insight, we strive to empower women to nurture their intelligence, creativity, and capacities. Our efforts are dedicated to the empowerment of women through skills development, entrepreneurship, and meaningful support.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card plain accordion-item">
+                  <div class="card-header !mb-0 !p-[0_0_.8rem_0] !border-0 !bg-inherit" id="headingTwo">
+                    <button class="accordion-button flex items-center justify-between w-full !p-[0_0_0_1.1rem] !text-[.85rem]" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Our Journey
+                      <span class="icon transition-transform duration-300 ease-in-out">
+                        <i class="uil uil-angle-down"></i>
+                      </span>
+                    </button>
+                  </div>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="card-body flex-[1_1_auto] pb-4 xl:p-[2rem_2.5rem_1.25rem] lg:p-[2rem_2.5rem_1.25rem] md:p-[2rem_2.5rem_1.25rem]">
+                      <p>Our journey began many years ago as an informal initiative, bringing together women from diverse backgrounds through gatherings, online meetups, and collaborative support. We organized workshops, shared resources, and created a network where women could access guidance and exchange knowledge. Through these efforts, we helped women develop new skills, build confidence, and strengthen their entrepreneurial spirit.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card plain accordion-item">
+                  <div class="card-header !mb-0 !p-[0_0_.8rem_0] !border-0 !bg-inherit" id="headingThree">
+                    <button class="accordion-button flex items-center justify-between w-full !p-[0_0_0_1.1rem] !text-[.85rem]" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Your Path With WISE
+                      <span class="icon transition-transform duration-300 ease-in-out">
+                        <i class="uil uil-angle-down"></i>
+                      </span>
+                    </button>
+                  </div>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="card-body flex-[1_1_auto] pb-4 xl:p-[2rem_2.5rem_1.25rem] lg:p-[2rem_2.5rem_1.25rem] md:p-[2rem_2.5rem_1.25rem]">
+                      <p>Whether you’re a young woman eager to explore entrepreneurial opportunities, an individual seeking to expand your skills, or a community partner, WISE is your platform for growth, innovation, and connection. We are committed to helping women realize their potential and build sustainable, independent futures.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--/.accordion -->
+            </div>
+            <!--/column -->
+          </div>
+          <!--/.row -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <%= render 'shared/contact' %>
+      <!-- /section -->
     </div>
-    <!-- /.container -->
-  </section>
-  <%= render 'shared/contact' %>
-  <!-- /section -->
-</div>
-<!-- /.content-wrapper -->
-<!-- progress wrapper -->
-<div class="progress-wrap fixed w-[2.3rem] h-[2.3rem] cursor-pointer block shadow-[inset_0_0_0_0.1rem_rgba(128,130,134,0.25)] z-[1010] opacity-0 invisible translate-y-3 transition-all duration-[0.2s] ease-[linear,margin-right] delay-[0s] rounded-[100%] right-6 bottom-6 motion-reduce:transition-none after:absolute after:content-['\e951'] after:text-center after:leading-[2.3rem] after:text-[1.2rem] after:text-[#605dba] after:h-[2.3rem] after:w-[2.3rem] after:cursor-pointer after:block after:z-[1] after:transition-all after:duration-[0.2s] after:ease-linear after:left-0 after:top-0 motion-reduce:after:transition-none after:font-Unicons">
-  <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-    <path class="fill-none stroke-[#605dba] stroke-[4] box-border transition-all duration-[0.2s] ease-linear motion-reduce:transition-none" d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-  </svg>
-</div>
+    <!-- /.content-wrapper -->
+    <!-- progress wrapper -->
+    <div class="progress-wrap fixed w-[2.3rem] h-[2.3rem] cursor-pointer block shadow-[inset_0_0_0_0.1rem_rgba(128,130,134,0.25)] z-[1010] opacity-0 invisible translate-y-3 transition-all duration-[0.2s] ease-[linear,margin-right] delay-[0s] rounded-[100%] right-6 bottom-6 motion-reduce:transition-none after:absolute after:content-['\e951'] after:text-center after:leading-[2.3rem] after:text-[1.2rem] after:text-[#605dba] after:h-[2.3rem] after:w-[2.3rem] after:cursor-pointer after:block after:z-[1] after:transition-all after:duration-[0.2s] after:ease-linear after:left-0 after:top-0 motion-reduce:after:transition-none after:font-Unicons">
+      <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path class="fill-none stroke-[#605dba] stroke-[4] box-border transition-all duration-[0.2s] ease-linear motion-reduce:transition-none" d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+    </div>
