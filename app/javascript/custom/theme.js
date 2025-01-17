@@ -1,3 +1,6 @@
+import Headhesive from "custom/headhesive";
+
+
 'use strict';
 var theme = {
   /**
@@ -19,7 +22,7 @@ var theme = {
     theme.backgroundImageMobile();
     theme.imageHoverOverlay();
     theme.rellax();
-    theme.scrollCue();
+    /** theme.scrollCue();   */
     theme.swiperSlider();
     theme.lightbox();
     theme.plyr();
@@ -30,12 +33,12 @@ var theme = {
     theme.bsTooltips();
     theme.bsPopovers();
     theme.bsModal();
-    theme.iTooltip();
+   /**  theme.iTooltip();*/
     theme.forms();
     theme.passVisibility();
     theme.pricingSwitcher();
     theme.textRotator();
-    theme.codeSnippet();
+    /**theme.codeSnippet();*/
   },
   /**
    * Sticky Header
@@ -320,7 +323,7 @@ var theme = {
    * scrollCue.js
    * Enables showing elements by scrolling
    * Requires assets/js/vendor/scrollCue.min.js
-   */
+   
   scrollCue: () => {
     scrollCue.init({
       interval: -400,
@@ -328,7 +331,7 @@ var theme = {
       percentage: 0.8
     });
     scrollCue.update();
-  },
+  },*/
   /**
    * Swiper Slider
    * Enables carousels and sliders
@@ -336,6 +339,8 @@ var theme = {
    */
   swiperSlider: function() {
     var carousel = document.querySelectorAll('.swiper-container');
+
+
     for(var i = 0; i < carousel.length; i++) {
       var slider1 = carousel[i];
       slider1.classList.add('swiper-container-' + i);
@@ -912,4 +917,6 @@ var theme = {
     });
   },
 }
-theme.init();
+document.addEventListener('DOMContentLoaded', function() {
+  theme.init();
+});
