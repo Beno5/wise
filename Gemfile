@@ -50,6 +50,7 @@ gem "bootsnap", require: false
 
 gem "font-awesome-sass"
 gem 'devise'
+gem 'pg'
 
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
