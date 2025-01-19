@@ -2,15 +2,23 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: postgres
+  password: your_password
 
 development:
   <<: *default
-  database: your_local_database_name
+  database: wise_development
+  host: localhost
+  port: 5432
 
 test:
   <<: *default
-  database: your_test_database_name
+  database: wise_test
+  host: localhost
+  port: 5432
 
 production:
   <<: *default
-  url: <%= ENV['DATABASE_URL'] %>
+  database: wise_production
+  host: localhost
+  port: 5432

@@ -35060,3 +35060,25 @@ blockquote.video-wrapper .video-content.icon-top:before {
     display: none;
   }
 }
+
+.text-bold-purple {
+  color: #763884; /* Ljubičasta boja */
+  font-weight: bold; /* Bold tekst */
+}
+.btn-mypurple {
+  background-color: #763884;
+  border-color: #763884;
+  color: white;
+}
+
+.btn-mypurple:hover {
+  background-color: #622e6d;
+  border-color: #622e6d;
+}
+
+@media (max-width: 767.98px) {
+  .project-mobile-margin {
+    margin-top: 100px !important;
+    margin-bottom: 100px !important;
+  }
+}

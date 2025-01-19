@@ -3,17 +3,21 @@
   <div class="container pt-20 xl:pt-18 lg:pt-18 md:pt-18 pb-16 xl:pb-20 lg:pb-20 md:pb-20">
     <div class="flex flex-wrap mx-[-15px] xl:mx-[-35px] lg:mx-[-20px] mt-[-50px] items-center">
       <!-- Tekst sekcija -->
-      <div class="w-full xl:w-12/12 lg:w-12/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] max-w-full mt-[50px]">
-        <h2 class="text-[calc(1.305rem_+_0.66vw)] font-bold xl:text-[1.8rem] leading-[1.3] !mb-3">Women’s Institute for Skills and Entrepreneurship</h2>
-        <p class="lead !text-[1.05rem] !leading-[1.6] font-medium">WISE is a vibrant and forward-thinking association based in Austria. Our name represents the wisdom, strength, and resourcefulness inherent in women, qualities that have often gone unrecognized or underutilized throughout history. Like the owl in our logo, symbolizing knowledge and guidance, we are dedicated to helping women unlock their full potential by providing the support and resources they need to thrive in today’s world.</p>
+      <div class="w-full xl:w-12/12 lg:w-12/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] max-w-full mt-[50px] !relative">
+        <%= image_tag("svg/doodle1.svg", class: "h-9 !absolute xl:block lg:block", style: "top: -5%; left: -2%", alt: "doodle") %>
+        <h2 class="text-[calc(1.305rem_+_0.66vw)] font-bold xl:text-[1.8rem] leading-[1.3] !mb-3">
+          Women’s Institute for Skills and Entrepreneurship
+        </h2>
         <p class="lead !text-[1.05rem] !leading-[1.6] font-medium">
-          What began as informal gatherings and support networks has blossomed into a structured and impactful initiative, bringing together women from diverse backgrounds. As a formal association, WISE offers a platform for women to connect, learn, and grow, offering mentorship, educational programs, and resources tailored to help them achieve their goals.
+          <span class="text-bold-purple">WISE is a vibrant and forward-thinking association based in Austria</span>. Our name represents the wisdom, strength, and resourcefulness inherent in women, qualities that have often gone unrecognized or underutilized throughout history. Like the owl in our logo, symbolizing <span class="text-bold-purple">knowledge and guidance</span>, we are dedicated to helping women unlock their full potential by providing the support and resources they need to thrive in today’s world.
         </p>
         <p class="lead !text-[1.05rem] !leading-[1.6] font-medium">
-          The founders of WISE, Ema and Ena, share a deep commitment to advancing women’s empowerment and entrepreneurship. Their shared vision, reflected in the striking similarity of their names, represents their mutual dedication to creating opportunities for women across borders. With years of experience and expertise, Ema and Ena are passionate about fostering an environment where women are not only encouraged to pursue their dreams but are also equipped with the tools, skills, and networks necessary for success. Through WISE, they continue to create lasting, positive change, one woman at a time.
+          What began as informal gatherings and support networks has blossomed into a structured and impactful initiative, bringing together <span class="text-bold-purple">women from diverse backgrounds</span>. As a formal association, WISE offers a platform for women to <span class="text-bold-purple">connect, learn, and grow</span>, offering mentorship, educational programs, and resources tailored to help them achieve their goals.
         </p>
-        <!-- Ikone sekcija -->
-        <!-- /column -->
+        <p class="lead !text-[1.05rem] !leading-[1.6] font-medium">
+          The founders of WISE, Ema and Ena, share a deep commitment to advancing women’s empowerment and entrepreneurship. Their shared vision, reflected in the striking similarity of their names, represents their mutual dedication to <span class="text-bold-purple">creating opportunities for women across borders</span>. With years of experience and expertise, Ema and Ena are passionate about fostering an environment where women are not only encouraged to pursue their dreams but are also equipped with the tools, skills, and networks necessary for success. Through WISE, they continue to create lasting, positive change, <span class="text-bold-purple">one woman at a time</span>.
+        </p>
+        <%= image_tag("svg/doodle4.svg", class: "h-8 !absolute xl:block lg:block", style: "bottom: -3%; right: 1%", alt: "doodle") %>
       </div>
       <!-- /.row -->
     </div>
@@ -26,8 +30,9 @@
 <section class="wrapper !bg-[#edf2fc]">
   <div class="container pt-12 pb-[4.5rem] xl:pb-0 lg:pb-0 md:pb-0">
     <div class="flex flex-wrap mx-[-15px] lg:mx-[-20px] xl:mx-0 items-center">
-      <div class="md:w-5/12 lg:w-5/12 xl:w-4/12 w-full flex-[0_0_auto] px-[15px] lg:px-[20px] xl:px-0 max-w-full xl:ml-4p xsm:!hidden sm:!hidden md:!hidden xl:!flex lg:!flex !relative">
-        <div class="shape !rounded-[50%] !bg-[#e0e9fa] rellax !w-[12.5rem] !h-[12.5rem] hidden xl:block lg:block z-[1] absolute" data-rellax-speed="1" style="top: 7rem; left: 1rem"></div>
+      <div class="md:w-5/12 lg:w-5/12 xl:w-4/12 w-full flex-[0_0_auto] px-[15px] lg:px-[20px] xl:px-0 max-w-full xl:ml-4p sm:flex md:flex xl:!flex lg:!flex !relative">
+        <%= image_tag("svg/doodle3.svg", class: "!h-[3rem] absolute hidden xl:block lg:block", style: "top: -20%; left: 20%", alt: "image") %>
+        <div class="shape !rounded-[50%] !bg-[#e0e9fa] rellax !w-[12.5rem] !h-[12.5rem] xl:block lg:block z-[1] absolute" data-rellax-speed="1" style="top: 7rem; left: 1rem"></div>
         <figure class="relative z-[2]">
           <%= image_tag("ema1.png", alt: "image", class: "w-full max-w-full !h-auto") %>
         </figure>
@@ -37,11 +42,11 @@
         <div class="xl:!mt-10 lg:!mt-10 md:!mt-10 xl:!mb-20 lg:!mb-20 md:!mb-20 relative !z-10">
           <h2 class="text-[calc(1.365rem_+_1.38vw)] font-bold leading-[1.2] xl:text-[2.4rem] mb-6">About Ema</h2>
           <div class="text-[1rem] leading-[1.7] font-medium">
-            <p>Ema Burić, PhD in Economic Sciences, is a lecturer at the Faculty of Economics, teaching courses in entrepreneurship, business decision-making, and business planning. She is dedicated to economic empowerment, helping individuals build skills and improve their market competitiveness through education and practical experience.</p>
-            <p>As co-founder of WISE, Ema leads programs focused on the economic empowerment of women, emphasizing business startup and management, business planning, time management, and leadership development. She also collaborates with the business sector to implement Talent Management strategies, enabling companies to enhance their competitive advantage by recognizing and nurturing potential within their teams. Through these initiatives, she bridges the gap between individual growth and organizational success, fostering sustainable development and innovation.</p>
-            <p>In addition to her work in business and education, Ema has a background in Food Science and Technology, which she has applied as a nutrition consultant. She has authored manuals and led workshops on topics such as women’s nutrition, healthy eating for children, and infant nutrition aligned with WHO guidelines.</p>
-            <p>Let’s connect on LinkedIn!<a class="text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="https://www.linkedin.com/in/ema-mustajba%C5%A1i%C4%87-ph-d-b87280b9/" target="_blank"><i class="uil uil-linkedin before:content-['\\ebd1'] !text-[#0e76a8] text-[1rem]"></i></a></p>
-            <p>Check out my research on Google Scholar!<a class="text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="https://scholar.google.com/citations?hl=hr&user=xoHy7QsAAAAJ" target="_blank" rel="noopener noreferrer">
+            <p><span class="text-bold-purple">Ema Burić</span>, PhD in Economic Sciences, is a lecturer at the Faculty of Economics, teaching courses in entrepreneurship, business decision-making, and business planning. She is dedicated to economic empowerment, helping individuals build skills and improve their market competitiveness through education and practical experience.</p>
+            <p>As co-founder of WISE, Ema leads programs focused on the <span class="text-bold-purple">economic empowerment of women</span>, emphasizing business startup and management, business planning, time management, and leadership development. She also collaborates with the business sector to implement <span class="text-bold-purple">Talent Management strategies</span>, enabling companies to enhance their competitive advantage by recognizing and nurturing potential within their teams. Through these initiatives, she bridges the gap between individual growth and organizational success, fostering sustainable development and innovation.</p>
+            <p>In addition to her work in business and education, Ema has a background in <span class="text-bold-purple">Food Science and Technology</span>, which she has applied as a nutrition consultant. She has authored manuals and led workshops on topics such as women’s nutrition, healthy eating for children, and infant nutrition aligned with WHO guidelines.</p>
+            <p><span class="text-bold-purple">Let’s connect on LinkedIn!</span><a class="text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="https://www.linkedin.com/in/ema-mustajba%C5%A1i%C4%87-ph-d-b87280b9/" target="_blank"><i class="uil uil-linkedin before:content-['\\ebd1'] !text-[#0e76a8] text-[1rem]"></i></a></p>
+            <p><span class="text-bold-purple">Check out my research on Google Scholar!</span><a class="text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="https://scholar.google.com/citations?hl=hr&user=xoHy7QsAAAAJ" target="_blank" rel="noopener noreferrer">
                 <span style="display: inline-flex; align-items: center;">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 1em; height: 1em; fill: currentColor;"><path d="M390.9 298.5c0 0 0 .1 .1 .1c9.2 19.4 14.4 41.1 14.4 64C405.3 445.1 338.5 512 256 512s-149.3-66.9-149.3-149.3c0-22.9 5.2-44.6 14.4-64h0c1.7-3.6 3.6-7.2 5.6-10.7c4.4-7.6 9.4-14.7 15-21.3c27.4-32.6 68.5-53.3 114.4-53.3c33.6 0 64.6 11.1 89.6 29.9c9.1 6.9 17.4 14.7 24.8 23.5c5.6 6.6 10.6 13.8 15 21.3c2 3.4 3.8 7 5.5 10.5zm26.4-18.8c-30.1-58.4-91-98.4-161.3-98.4s-131.2 40-161.3 98.4L0 202.7 256 0 512 202.7l-94.7 77.1z"/></svg>
                 </span>
@@ -61,26 +66,48 @@
 <section class="wrapper !bg-[#edf2fc]">
   <div class="container pb-[4.5rem] xl:pb-0 lg:pb-0 md:pb-0">
     <div class="flex flex-wrap mx-[-15px] lg:mx-[-20px] xl:mx-0 items-center">
-      <div class="md:w-6/12 lg:w-6/12 xl:w-7/12 xxl:w-7/12 w-full flex-[0_0_auto] px-[15px] lg:px-[20px] xl:px-0 max-w-full xl:ml-4p">
-        <div class="xl:!mt-10 lg:!mt-10 md:!mt-10 xl:!mb-20 lg:!mb-20 md:!mb-20 relative !z-10">
-          <h2 class="text-[calc(1.365rem_+_1.38vw)] font-bold leading-[1.2] xl:text-[2.4rem] mb-6">About Ena</h2>
-          <div class="text-[1rem] leading-[1.7] font-medium">
-            <p>Ena is a highly accomplished Intercultural Communication Specialist who applies her expertise on both individual and organizational levels. She empowers individuals to navigate multicultural environments more effectively through education and mentorship focused on employment and adaptation in diverse settings, communication, negotiation, and leadership. At the organizational level, she provides guidance in managing multicultural teams, shaping organizational culture, and adapting marketing strategies to local markets, ensuring success in a globalized world.</p>
-            <p>Holding an M.A. in Marketing Management, Ena brings over a decade of Business Development experience in the Pharmaceutical industry, where she excelled in strategic planning, international operations, and managerial leadership. Her ability to bridge cultural gaps and foster collaboration has positioned her as a trusted advisor for individuals and organizations alike.</p>
-            <p>As co-founder of WISE, Ena has been instrumental in designing and leading initiatives that empower women through skill-building, mentorship, and education, particularly in Bosnia and Herzegovina. Her work aligns seamlessly with WISE’s mission to promote innovation, foster entrepreneurship, and create opportunities for women to thrive in culturally diverse environments.</p>
-            <p>Let’s connect on LinkedIn!<a class="text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="https://www.linkedin.com/in/enafejzagic/" target="_blank"><i class="uil uil-linkedin before:content-['\\ebd1'] !text-[#0e76a8] text-[1rem]"></i></a></p>
-          </div>
-        </div>
-        <!-- /.content -->
-      </div>
-      <!--/column -->
-      <div class="md:w-5/12 lg:w-5/12 xl:w-4/12 w-full flex-[0_0_auto] px-[15px] lg:px-[20px] xl:px-0 max-w-full xl:ml-4p xsm:!hidden sm:!hidden md:!hidden xl:!flex lg:!flex !relative">
-        <div class="shape !rounded-[50%] !bg-[#e0e9fa] rellax !w-[12.5rem] !h-[12.5rem] hidden xl:block lg:block z-[1] absolute" data-rellax-speed="1" style="top: 7rem; left: 1rem"></div>
+      <!-- Slika -->
+      <div class="md:w-5/12 lg:w-5/12 xl:w-4/12 w-full flex-[0_0_auto] px-[15px] lg:px-[20px] xl:px-0 max-w-full xl:ml-4p sm:order-1 md:order-2 lg:order-2 xl:order-2 !relative">
+        <%= image_tag("svg/doodle3.svg", class: "!h-[3rem] absolute hidden xl:block lg:block", style: "top: -20%; left: 20%", alt: "image") %>
+        <div class="shape !rounded-[50%] !bg-[#e0e9fa] rellax !w-[12.5rem] !h-[12.5rem] sm:block md:block xl:block lg:block z-[1] absolute" data-rellax-speed="1" style="top: 7rem; left: 1rem"></div>
         <figure class="relative z-[2]">
           <%= image_tag("ena.jpg", alt: "image", class: "w-full max-w-full !h-auto") %>
         </figure>
       </div>
-      <!--/column -->
+      <!-- Tekst -->
+      <div class="md:w-6/12 lg:w-6/12 xl:w-7/12 xxl:w-7/12 w-full flex-[0_0_auto] px-[15px] lg:px-[20px] xl:px-0 max-w-full xl:ml-4p sm:order-2 md:order-1 lg:order-1 xl:order-1">
+        <div class="xl:!mt-10 lg:!mt-10 md:!mt-10 xl:!mb-20 lg:!mb-20 md:!mb-20 relative !z-10">
+          <h2 class="text-[calc(1.365rem_+_1.38vw)] font-bold leading-[1.2] xl:text-[2.4rem] mb-6">About Ena</h2>
+          <div class="text-[1rem] leading-[1.7] font-medium">
+            <p>
+              <span class="text-bold-purple">Ena Fejzagić Livančić</span> is a highly accomplished 
+              <span class="text-bold-purple">Intercultural Communication Specialist</span> who applies her expertise on both individual and organizational levels. 
+              She empowers individuals to navigate multicultural environments more effectively through education and mentorship focused on 
+              employment and adaptation in diverse settings, communication, negotiation, and leadership. At the organizational level, 
+              she provides guidance in managing multicultural teams, shaping organizational culture, and adapting marketing strategies to 
+              local markets, ensuring success in a globalized world.
+            </p>
+            <p>
+              Holding an M.A. in <span class="text-bold-purple">Marketing Management</span>, Ena brings over a decade of Business Development 
+              experience in the Pharmaceutical industry, where she excelled in strategic planning, international operations, and managerial leadership. 
+              Her ability to bridge cultural gaps and foster collaboration has positioned her as a trusted advisor for individuals and organizations alike.
+            </p>
+            <p>
+              As co-founder of WISE, Ena has been instrumental in designing and leading initiatives that empower women through 
+              <span class="text-bold-purple">skill-building, mentorship, and education</span>, particularly in Bosnia and Herzegovina. 
+              Her work aligns seamlessly with WISE’s mission to promote innovation, foster entrepreneurship, and create opportunities 
+              for women to thrive in culturally diverse environments.
+            </p>
+            <p>
+              <span class="text-bold-purple">Let’s connect on LinkedIn!</span>
+              <a class="text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="https://www.linkedin.com/in/enafejzagic/" target="_blank">
+                <i class="uil uil-linkedin before:content-['\\ebd1'] !text-[#0e76a8] text-[1rem]"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+        <!-- /.content -->
+      </div>
     </div>
     <!--/.row -->
   </div>
@@ -89,9 +116,17 @@
 <section class="wrapper !bg-[#ffffff] ">
   <div class="container pt-12 xl:pt-12 lg:pt-12 md:pt-12">
     <div class="flex flex-wrap mx-[-15px] !mb-3">
-      <div class="md:w-10/12 lg:w-full xl:w-10/12 xxl:w-9/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto !text-center">
-        <h2 class="!text-[.75rem] uppercase text-[#aab0bc] !mb-3 tracking-[0.02rem] leading-[1.35]">Our Team</h2>
-        <h3 class="text-[calc(1.305rem_+_0.66vw)] font-bold xl:text-[1.8rem] !leading-[1.3] mb-7">Meet our dedicated team, a group of passionate professionals committed to empowering women and fostering entrepreneurship through education and support.</h3>
+      <div class="md:w-10/12 lg:w-full xl:w-10/12 xxl:w-9/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto !text-center !relative">
+        <!-- Doodle blizu naslova -->
+        <%= image_tag("svg/doodle10.svg", class: "!h-[3rem] !absolute xl:block lg:block", style: "top: 0; left: 65%; transform: translateY(-50%);", alt: "image") %>
+        <!-- Naslov Our Team -->
+        <h2 class="!text-[.75rem] uppercase text-[#aab0bc] !mb-3 tracking-[0.02rem] leading-[1.35]">
+          Our Team
+        </h2>
+        <!-- Opis tima -->
+        <h3 class="text-[calc(1.305rem_+_0.66vw)] font-bold xl:text-[1.8rem] !leading-[1.3] mb-7">
+          Meet our dedicated team, a group of passionate professionals committed to empowering women and fostering entrepreneurship through education and support.
+        </h3>
       </div>
     </div>
     <% linkedin_urls = {
@@ -143,32 +178,41 @@
   <div class="container pt-[4.5rem] pb-14 xl:pt-24 lg:pt-24 md:pt-24">
     <div class="flex flex-wrap mx-[-15px] xl:mx-[-35px] lg:mx-[-20px] mt-[-50px]">
       <div class="w-full flex flex-col items-center px-[15px] mt-[50px] max-w-full">
-    <h2 class="text-center text-[calc(1.305rem_+_0.66vw)] font-bold xl:text-[1.8rem] !leading-[1.3] mb-5">What We Do?</h2>
-            <p class="lead !text-[1.05rem] !leading-[1.6] font-medium text-center">
-Through partnerships, projects, and innovative programs, WISE offers:</p>
-</div>
-
+        <h2 class="text-center text-[calc(1.305rem_+_0.66vw)] font-bold xl:text-[1.8rem] !leading-[1.3] mb-5">What We Do?</h2>
+        <%= image_tag("svg/doodle6.svg", class: "!h-[3rem] !absolute hidden xl:block lg:block", style: "", alt: "image") %>
+        <p class="lead !text-[1.05rem] !leading-[1.6] font-medium text-center">
+          Through partnerships, projects, and innovative programs, WISE offers:</p>
+      </div>
       <div class="w-full flex-[0_0_auto] px-[15px] max-w-full xl:!order-2 lg:!order-2 mt-[50px]">
         <div class="flex flex-wrap mx-[-15px] xl:mx-[-12.5px] lg:mx-[-12.5px] md:mx-[-12.5px] mt-[-25px]">
           <% [
-            ["Entrepreneurship Support", "fa-solid fa-business-time", "#fae6e7"],
-            ["Skills Development", "fa-solid fa-brain", "#fef3e4"],
-            ["Mentorship Programs", "fa-solid fa-user-friends", "#eaf3ef"],
-            ["Networking Opportunities", "fa-solid fa-handshake", "#e0e9fa"],
-            ["Resources & Tools", "fa-solid fa-tools", "#e0e9fa"],
-            ["Success Stories", "fa-solid fa-trophy", "#eaf3ef"],
-            ["Community Engagement", "fa-solid fa-users", "#fae6e7"],
-            ["Advocacy & Awareness", "fa-solid fa-bullhorn", "#fef3e4"]
-          ].each_with_index do |(title, icon, bg_color), index| %>
+      ["Entrepreneurship Support", "fa-solid fa-business-time", "#fae6e7"],
+      ["Skills Development", "fa-solid fa-brain", "#fef3e4"],
+      ["Mentorship Programs", "fa-solid fa-user-friends", "#eaf3ef"],
+      ["Networking Opportunities", "fa-solid fa-handshake", "#e0e9fa"],
+      ["Resources & Tools", "fa-solid fa-tools", "#e0e9fa"],
+      ["Success Stories", "fa-solid fa-trophy", "#eaf3ef"],
+      ["Community Engagement", "fa-solid fa-users", "#fae6e7"],
+      ["Advocacy & Awareness", "fa-solid fa-bullhorn", "#fef3e4"]
+    ].each_with_index do |(title, icon, bg_color), index| %>
             <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] xl:px-[12.5px] lg:px-[12.5px] md:px-[12.5px] px-[15px] max-w-full mt-[25px]">
-              <div class="card" style="background-color: <%= bg_color %>;">
+              <div class="card h-full flex flex-col justify-center items-center text-center" style="background-color: <%= bg_color %>;">
                 <div class="card-body p-[40px]">
-                  <div class="icon-container mb-2 flex flex-col items-center">
+                  <div class="icon-container mb-4 flex flex-col items-center">
                     <i class="<%= icon %> text-[#3f78e0] text-[2rem]"></i>
                   </div>
-                  <h4 class="text-center"><%= title %></h4>
-                  <p class="!mb-0">
-                    <%= ["Resources, training, and mentorship for starting and growing a business.", "Workshops, courses, and events to help women develop new skills.", "Access to mentors who provide guidance and support for professional and personal growth.", "Events and platforms to connect with like-minded women and expand professional networks.", "Access to templates, guides, funding opportunities, and other practical tools.", "Inspiring stories of women who have achieved their goals through WISE support.", "Programs that encourage collaboration, volunteering, and building a supportive community.", "Initiatives to promote gender equality, women’s rights, and entrepreneurship awareness."][index] %>
+                  <h4 class="text-center font-bold mb-2"><%= title %></h4>
+                  <p class="text-center !mb-0">
+                    <%= [
+                "Resources, training, and mentorship for starting and growing a business",
+                "Workshops, courses, and events to help women develop new skills",
+                "Access to mentors who provide guidance and support for professional and personal growth",
+                "Events and platforms to connect with like-minded women and expand professional networks",
+                "Access to templates, guides, funding opportunities, and other practical tools",
+                "Inspiring stories of women who have achieved their goals through WISE support",
+                "Programs that encourage collaboration, volunteering, and building a supportive community",
+                "Initiatives to promote gender equality, women’s rights, and entrepreneurship awareness"
+              ][index] %>
                   </p>
                 </div>
               </div>
@@ -180,11 +224,11 @@ Through partnerships, projects, and innovative programs, WISE offers:</p>
   </div>
 </section>
 <!-- /section -->
-  <section class="wrapper image-wrapper bg-full bg-image bg-overlay bg-overlay-light-600" style="background-image: url('<%= asset_path("photos/bg23.png") %>');" data-image-src="<%= asset_path("photos/bg23.png") %>">
+<section class="wrapper image-wrapper bg-full bg-image bg-overlay bg-overlay-light-600" style="background-image: url('<%= asset_path("photos/bg23.png") %>');" data-image-src="<%= asset_path("photos/bg23.png") %>">
   <div class="container pt-20 xl:pt-28 lg:pt-28 md:pt-28 pb-16 xl:pb-20 lg:pb-20 md:pb-20">
     <div class="lg:w-10/12 xl:w-9/12 xxl:w-8/12 flex-[0_0_auto] px-[15px] max-w-full !mx-auto !relative">
-          <h3 class="xl:text-[2rem] text-[calc(1.325rem_+_0.9vw)] font-semibold !leading-[1.2] mb-12 lg:!px-5 xl:!px-0 xxl:!px-6">Partner with WISE: Empowering Collaboration for Impactful Projects</h3>
-        </div>
+      <h3 class="xl:text-[2rem] text-[calc(1.325rem_+_0.9vw)] font-semibold !leading-[1.2] mb-12 lg:!px-5 xl:!px-0 xxl:!px-6"><span class="text-bold-purple">Partner</span> with WISE: Empowering Collaboration for Impactful Projects</h3>
+    </div>
     <div class="flex flex-wrap mx-[-15px] mt-[-50px] xl:mx-[-35px] lg:mx-[-20px] items-center">
       <!-- Image Column -->
       <div class="xl:w-5/12 lg:w-5/12 flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] max-w-full xl:!order-2 lg:!order-2 !relative mt-[50px]">
@@ -199,15 +243,15 @@ Through partnerships, projects, and innovative programs, WISE offers:</p>
         <p class="lead !text-[1.05rem] !leading-[1.6] font-medium">
           If you're an organization, university, or business looking for a reliable partner to collaborate on projects related to women’s empowerment, entrepreneurship, or skill development,
           <span class="relative z-[2] whitespace-nowrap after:content-[''] after:block after:absolute after:w-[102.5%] after:h-[30%] after:left-[-1.5%] after:z-[-1] after:transition-all after:duration-[0.2s] after:ease-in-out after:mt-0 after:rounded-[5rem] after:bottom-[9%] motion-reduce:after:transition-none after:bg-[rgba(63,120,224,.12)] purple">
-            WISE is here to support you.
+            <span class="text-bold-purple"> WISE is here to support you</span>.
           </span>
           With our extensive experience in designing and implementing programs that empower women and foster sustainable growth, we are confident in our ability to contribute valuable expertise and drive impactful results.
         </p>
-                <p class="lead !text-[1.05rem] !leading-[1.6] font-medium">
-We are always open to partnering with like-minded organizations who share our mission of creating opportunities for growth and innovation. If you're looking to expand your initiatives, connect with diverse communities, or develop new projects focused on education, leadership, or business development, <span class="font-bold">WISE is the ideal partner to help you achieve your goals.</span> Let's work together to make a difference!
+        <p class="lead !text-[1.05rem] !leading-[1.6] font-medium">
+          We are always open to partnering with like-minded organizations who share our mission of creating opportunities for growth and innovation. If you're looking to expand your initiatives, connect with diverse communities, or develop new projects focused on education, leadership, or business development, <span class="font-bold">WISE is the ideal partner to help you achieve your goals.</span> <span class="text-bold-purple">Let's work together to make a difference!</span>
         </p>
         <%= link_to "Contact us", contact_path, 
-            class: "btn btn-purple text-white !bg-[#747ed1] border-[#747ed1] hover:text-white hover:bg-[#747ed1] hover:border-[#747ed1] focus:shadow-[rgba(92,140,229,1)] active:text-white active:bg-[#747ed1] active:border-[#747ed1] disabled:text-white disabled:bg-[#747ed1] disabled:border-[#747ed1] !rounded-[50rem] !mt-2" %>
+           class: "btn btn-mypurple !rounded-[50rem] !mt-2" %>
       </div>
     </div>
     <!--/.row -->
