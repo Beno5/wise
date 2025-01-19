@@ -33,7 +33,7 @@
     <!-- /.overflow-hidden -->
   </section>
   <section class="wrapper !bg-[#ffffff]">
-    <div class="container pt-32 xl:pt-40 lg:pt-40 md:pt-40 pb-[4.5rem] xl:pb-24 lg:pb-24 md:pb-24">
+    <div class="container pt-32 xl:pt-40 lg:pt-40 md:pt-40">
       <div class="flex flex-wrap mx-[-15px] !text-center">
         <div class="lg:w-10/12 xl:w-9/12 xxl:w-8/12 flex-[0_0_auto] px-[15px] max-w-full !mx-auto !relative">
           <%= image_tag("svg/doodle3.svg", class: "!h-[3rem] absolute hidden xl:block lg:block", style: "top: -45%; left: 23%", alt: "image") %>
@@ -43,53 +43,57 @@
       </div>
     </div>
   </section>
-  <section class="wrapper !bg-[#ffffff]">
-    <div class="container pt-20 xl:pt-28 lg:pt-28 md:pt-28 pb-16 xl:pb-20 lg:pb-20 md:pb-20">
+  <section class="wrapper !bg-[#ffffff] py-16 xl:py-20 lg:py-20 md:py-20">
+    <div class="container">
       <div class="flex flex-wrap mx-[-15px]">
-        <div class="xl:w-10/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto">
-          <div class="card image-wrapper bg-full bg-image bg-overlay bg-overlay-400 text-white mt-[-1.25rem] xl:!mt-0 lg:!mt-0  xl:-translate-y-2/4 lg:-translate-y-2/4 bg-cover [background-size:100%] bg-[center_center] bg-no-repeat !bg-scroll !relative z-0 before:rounded-[0.4rem] before:bg-[rgba(30,34,40,.4)] before:content-[''] before:block before:absolute before:z-[1] before:w-full before:h-full before:left-0 before:top-0" style="background-image: url('<%= asset_path("photos/bg23.png") %>');">
-            <div class="card-body !p-10 xl:!p-14">
-              <div class="flex flex-wrap mx-[-15px] !text-center">
-                <div class="xl:w-12/12 xxl:w-12/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto">
-                  <h2 class="text-[0.8rem] !leading-[1.35] uppercase text-white !mb-3">Our Mission</h2>
-                  <h3 class="text-[calc(1.265rem_+_0.18vw)] font-bold xl:text-[1.4rem] !leading-[1.35] !mb-6 xl:!mb-0 lg:!mb-0 text-white">To empower women through education, mentorship, and access to resources, fostering skills and entrepreneurship that enable them to thrive personally and professionally. By creating a supportive and inclusive community, we aim to guide women in unlocking their potential, navigating challenges, and contributing to a more equitable and innovative society.</h3>
+        <div class="xl:w-10/12 w-full flex-[0_0_auto] px-[15px] max-w-full mx-auto">
+          <div class="card image-wrapper bg-full bg-image bg-overlay bg-overlay-light-600 relative" 
+     style="background-image: url('<%= asset_path("photos/bg23.png") %>');" 
+     data-image-src="<%= asset_path("photos/bg23.png") %>">
+            <div class="card-body px-10 py-14 xl:px-14 xl:py-20">
+              <div class="flex flex-wrap mx-[-15px] text-center">
+                <div class="xl:w-full w-full px-[15px] mx-auto">
+                  <h3 class="xl:text-[2rem] text-[calc(1.325rem_+_0.9vw)] font-semibold !leading-[1.2] lg:!px-5 xl:!px-0 xxl:!px-6">Our Mission</h3>
+                  <p class="lead !text-[1.2rem] !leading-[1.5] font-normal mb-7">
+                    To empower women through education, mentorship, and access to resources, fostering skills 
+                    and entrepreneurship that enable them to thrive personally and professionally. By creating 
+                    a supportive and inclusive community, we aim to guide women in unlocking their potential, 
+                    navigating challenges, and contributing to a more equitable and innovative society.
+                  </p>
                 </div>
-                <!--/.card-body -->
               </div>
-              <!--/.card -->
             </div>
-            <!-- /column -->
           </div>
-          <!-- /.row -->
         </div>
       </div>
     </div>
   </section>
-  <section class="wrapper !bg-[#ffffff]">
-    <div class="container pt-20 xl:pt-28 lg:pt-28 md:pt-28 pb-16 xl:pb-20 lg:pb-20 md:pb-20">
+  <section class="wrapper !bg-[#f9f9f9]">
+    <div class="container">
       <div class="flex flex-wrap mx-[-15px]">
-        <div class="xl:w-10/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto">
-          <div class="card image-wrapper bg-full bg-image bg-overlay bg-overlay-400 text-white mt-[-1.25rem] xl:!mt-0 lg:!mt-0  xl:-translate-y-2/4 lg:-translate-y-2/4 bg-cover [background-size:100%] bg-[center_center] bg-no-repeat !bg-scroll !relative z-0 before:rounded-[0.4rem] before:bg-[rgba(30,34,40,.4)] before:content-[''] before:block before:absolute before:z-[1] before:w-full before:h-full before:left-0 before:top-0" style="background-image: url('<%= asset_path("photos/bg23.png") %>');">
-            <div class="card-body !p-10 xl:!p-14">
-              <div class="flex flex-wrap mx-[-15px] !text-center">
-                <div class="xl:w-12/12 xxl:w-12/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto">
-                  <h2 class="text-[0.8rem] !leading-[1.35] uppercase text-white !mb-3">Our Vision</h2>
-                  <h3 class="text-[calc(1.265rem_+_0.18vw)] font-bold xl:text-[1.4rem] !leading-[1.35] !mb-6 xl:!mb-0 lg:!mb-0 text-white">We envision a world where women of all ages, backgrounds, and experiences can reach their potential to create sustainable, independent futures.</h3>
+        <div class="xl:w-10/12 w-full flex-[0_0_auto] px-[15px] max-w-full mx-auto">
+          <div class="card image-wrapper bg-full bg-image bg-overlay bg-overlay-light-600 relative" 
+     style="background-image: url('<%= asset_path("photos/bg23.png") %>');" 
+     data-image-src="<%= asset_path("photos/bg23.png") %>">
+            <div class="card-body px-10 py-14 xl:px-14 xl:py-20">
+              <div class="flex flex-wrap mx-[-15px] text-center">
+                <div class="xl:w-full w-full px-[15px] mx-auto">
+                  <h3 class="xl:text-[2rem] text-[calc(1.325rem_+_0.9vw)] font-semibold !leading-[1.2] lg:!px-5 xl:!px-0 xxl:!px-6">Our Vision</h3>
+                  <p class="lead !text-[1.2rem] !leading-[1.5] font-normal mb-7">
+                    We envision a world where women of all ages, backgrounds, and experiences can reach their 
+                    potential to create sustainable, independent futures.
+                  </p>
                 </div>
-                <!--/.card-body -->
               </div>
-              <!--/.card -->
             </div>
-            <!-- /column -->
           </div>
-          <!-- /.row -->
         </div>
       </div>
     </div>
   </section>
   <!-- /section -->
   <section class="wrapper !bg-[#ffffff]">
-    <div class="container pt-32 xl:pt-40 lg:pt-40 md:pt-40 pb-[4.5rem] xl:pb-24 lg:pb-24 md:pb-24">
+    <div class="container pt-32 xl:pt-40 lg:pt-40 md:pt-40 pb-[2.25rem] xl:pb-12 lg:pb-12 md:pb-12">
       <div class="flex flex-wrap mx-[-15px] !text-center">
         <div class="lg:w-10/12 xl:w-9/12 xxl:w-8/12 flex-[0_0_auto] px-[15px] max-w-full !mx-auto !relative">
           <%= image_tag("svg/doodle3.svg", class: "!h-[3rem] absolute hidden xl:block lg:block", style: "top: -45%; left: 23%", alt: "image") %>
@@ -97,7 +101,7 @@
           <h3 class="xl:text-[2rem] text-[calc(1.325rem_+_0.9vw)] font-semibold !leading-[1.2] mb-12 lg:!px-5 xl:!px-0 xxl:!px-6">These key areas of focus embody WISE's mission to drive growth, <span class="text-gradient gradient-7">inspire innovation</span>, and create lasting impact through dedicated efforts and meaningful initiatives.</h3>
         </div>
       </div>
-      <div class="flex flex-wrap mx-[-15px] mb-40">
+      <div class="flex flex-wrap mx-[-15px]">
         <div class="xxl:w-11/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto">
           <div class="flex flex-wrap mx-[-15px] xl:mx-[-20px] lg:mx-[-20px] md:mx-[-20px] mt-[-50px] !text-center">
             <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[50px] max-w-full">
@@ -153,34 +157,30 @@
       </div>
     </div>
   </section>
-
   <section class="wrapper !bg-[#ffffff]">
-  <div class="container pt-20 xl:pt-28 lg:pt-28 md:pt-28 pb-16 xl:pb-20 lg:pb-20 md:pb-20">
-    <!-- Title above everything -->
-    <div class="lg:w-10/12 xl:w-9/12 xxl:w-8/12 flex-[0_0_auto] px-[15px] max-w-full !mx-auto !relative">
-          <h3 class="xl:text-[2rem] text-[calc(1.325rem_+_0.9vw)] font-semibold !leading-[1.2] mb-12 lg:!px-5 xl:!px-0 xxl:!px-6">Your Future Starts Now: Unlocking Potential Through Lifelong Learning</h3>
+    <div class="container pt-12 xl:pt-12 lg:pt-12 md:pt-12">
+      <!-- Title above everything -->
+      <div class="lg:w-10/12 xl:w-9/12 xxl:w-8/12 flex-[0_0_auto] px-[15px] max-w-full !mx-auto !relative">
+        <h3 class="xl:text-[2rem] text-[calc(1.325rem_+_0.9vw)] font-semibold !leading-[1.2] mb-12 lg:!px-5 xl:!px-0 xxl:!px-6">Your Future Starts Now: Unlocking Potential Through Lifelong Learning</h3>
+      </div>
+      <div class="flex flex-wrap mx-[-15px] mt-[-50px] xl:mx-[-35px] lg:mx-[-20px] items-center">
+        <!-- Image Column -->
+        <div class="xl:w-6/12 lg:w-6/12 flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] max-w-full xl:!order-2 lg:!order-2 !relative mt-[50px]">
+          <figure class="m-0 p-0">
+            <%= image_tag("team.jpg", class: "w-auto", alt: "image") %>
+          </figure>
         </div>
-    
-    <div class="flex flex-wrap mx-[-15px] mt-[-50px] xl:mx-[-35px] lg:mx-[-20px] items-center">
-      <!-- Image Column -->
-      <div class="xl:w-6/12 lg:w-6/12 flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] max-w-full xl:!order-2 lg:!order-2 !relative mt-[50px]">
-        <figure class="m-0 p-0">
-          <%= image_tag("team.jpg", class: "w-auto", alt: "image") %>
-        </figure>
+        <!-- Content Column -->
+        <div class="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] max-w-full mt-[50px]">
+          <p>In a world where women still face inequality and often encounter obstacles in their careers, such as the demands of family life, it's crucial to recognize that education is not confined to the student years. Regardless of the phase of life you're in, it is never too late to invest in yourself, acquire new knowledge, and develop skills that will make you more competitive in the job market or even allow you to launch your own business.</p>
+          <p>At WISE, we believe that lifelong learning is the key to empowerment and growth. Whether you’re a young woman starting your career, a mother balancing family and work, or someone looking to shift careers or start a business, the journey of learning can help you take control of your future. Education doesn’t stop after graduation. It’s a continuous process that opens doors to better opportunities.</p>
+          <p>Investing in yourself is the best investment you can make. The world of work and entrepreneurship is constantly evolving, and the more skills and knowledge you gain, the more prepared you’ll be to secure a better position, whether in the job market or as an entrepreneur. Our mission at WISE is to provide the support, resources, and guidance you need to unlock your full potential, no matter where you are in life. We are here to help you achieve your dreams, challenge the status quo, and create the future you deserve.</p>
+        </div>
       </div>
-      <!-- Content Column -->
-      <div class="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] max-w-full mt-[50px]">
-        <p>In a world where women still face inequality and often encounter obstacles in their careers, such as the demands of family life, it's crucial to recognize that education is not confined to the student years. Regardless of the phase of life you're in, it is never too late to invest in yourself, acquire new knowledge, and develop skills that will make you more competitive in the job market or even allow you to launch your own business.</p>
-        <p>At WISE, we believe that lifelong learning is the key to empowerment and growth. Whether you’re a young woman starting your career, a mother balancing family and work, or someone looking to shift careers or start a business, the journey of learning can help you take control of your future. Education doesn’t stop after graduation. It’s a continuous process that opens doors to better opportunities.</p>
-        <p>Investing in yourself is the best investment you can make. The world of work and entrepreneurship is constantly evolving, and the more skills and knowledge you gain, the more prepared you’ll be to secure a better position, whether in the job market or as an entrepreneur. Our mission at WISE is to provide the support, resources, and guidance you need to unlock your full potential, no matter where you are in life. We are here to help you achieve your dreams, challenge the status quo, and create the future you deserve.</p>
-      </div>
+      <!--/.row -->
     </div>
-    <!--/.row -->
-  </div>
-</section>
-
+  </section>
   <%= render 'shared/contact' %>
   <!-- /section -->
 </div>
 <!-- /.content-wrapper -->
-

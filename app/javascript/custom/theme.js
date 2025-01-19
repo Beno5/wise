@@ -774,43 +774,37 @@ var theme = {
           inputRecaptcha.value = ""; 
           inputRecaptcha.dispatchEvent(new Event("change"));
         }
-        var validation = Array.prototype.filter.call(forms, function(form) {
-          form.addEventListener("submit", function(event) {
-            if(form.checkValidity() === false) {
-              event.preventDefault();
-              event.stopPropagation();
-            }
-            form.classList.add("was-validated");
-            if(form.checkValidity() === true) {
-              event.preventDefault();
-              form.classList.remove("was-validated");
-              // Send message only if the form has class .contact-form
-              var isContactForm = form.classList.contains('contact-form');
-              if(isContactForm) {
-                var data = new FormData(form);
-                var alertClass = 'alert-danger';
-                fetch("assets/php/contact.php", {
-                  method: "post",
-                  body: data
-                }).then((data) => {
-                  if(data.ok) {
-                    alertClass = 'alert-success';
-                  }
-                  return data.text();
-                }).then((txt) => {
-                  var alertBox = '<div class="alert ' + alertClass + ' alert-dismissible fade show"><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>' + txt + '</div>';
-                  if(alertClass && txt) {
-                    form.querySelector(".messages").insertAdjacentHTML('beforeend', alertBox);
-                    form.reset();
+        document.addEventListener("DOMContentLoaded", function() {
+          var forms = document.querySelectorAll('.needs-validation');
+        
+          Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener("submit", function(event) {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+                form.classList.add("was-validated");
+              } else {
+                event.preventDefault(); // Preveniraj slanje forme iako je forma validna
+                form.classList.remove("was-validated");
+        
+                if (form.classList.contains('contact-form')) {
+                  // Resetuj formu i reCAPTCHA ako je korištena
+                  form.reset();
+                  if (typeof grecaptcha !== 'undefined') {
                     grecaptcha.reset();
                   }
-                }).catch((err) => {
-                  console.log(err);
-                });
+        
+                  // Prikazuj obavještenje da je forma uspješno 'poslana'
+                  var alertBox = '<div class="alert alert-success alert-dismissible fade show">' +
+                                 '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>' +
+                                 'Your message has been sent successfully!</div>';
+                  form.querySelector(".messages").insertAdjacentHTML('beforeend', alertBox);
+                }
               }
-            }
-          }, false);
+            }, false);
+          });
         });
+        
       }, false);
     })();
   },

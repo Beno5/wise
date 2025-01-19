@@ -4,17 +4,11 @@
     <div class="flex flex-wrap mx-[-15px] xl:mx-[-35px] lg:mx-[-20px] mt-[-50px] items-center">
       <div class="xl:w-7/12 lg:w-7/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] mt-[50px] max-w-full">
         <figure class="m-0 p-0">
-          <%= image_tag("illustrations/i5.png", class: "w-auto", alt: "image") %>
+          <%= image_tag("bec.jpeg", class: "w-auto", alt: "image") %>
         </figure>
       </div>
       <!--/column -->
       <div class="xl:w-5/12 lg:w-5/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] mt-[50px] max-w-full">
-        <h2 class="!text-[.75rem] uppercase text-line relative align-top pl-[1.4rem] inline-flex tracking-[0.02rem] leading-[1.35] before:content-[''] before:absolute before:inline-block before:translate-y-[-60%] before:w-3 before:h-[0.05rem] before:left-0 before:top-2/4 before:bg-[#3f78e0] text-[#3f78e0] !mb-3">
-          Get In Touch
-        </h2>
-        <h3 class="text-[calc(1.285rem_+_0.42vw)] font-bold xl:text-[1.6rem] !leading-[1.3] mb-7">
-          Got any questions? Don't hesitate to get in touch.
-        </h3>
         <div class="flex flex-row">
           <div>
             <div class="icon text-[#3f78e0] xl:text-[1.4rem] text-[calc(1.265rem_+_0.18vw)] !mr-4 mt-[-0.25rem]">
@@ -57,12 +51,12 @@
   </div>
 </section>
 <section class="wrapper !bg-[#ffffff] angled upper-end relative border-0 before:top-[-4rem] before:border-l-transparent before:border-r-[100vw] before:border-t-[4rem] before:border-[#fefefe] before:content-[''] before:block before:absolute before:z-0 before:border-y-transparent before:border-0 before:border-solid before:right-0 after:content-[''] after:block after:absolute after:z-0 after:border-y-transparent after:border-[#fefefe] after:border-0 after:border-solid after:right-0">
-  <div class="container py-[4.5rem] xl:!py-24 lg:!py-24 md:!py-24">
+  <div class="container">
     <div class="flex flex-wrap mx-[-15px]">
       <div class="xl:w-8/12 xl:!ml-[16.66666667%] lg:w-10/12 lg:!ml-[8.33333333%] w-full flex-[0_0_auto] px-[15px] max-w-full">
         <h2 class="text-[calc(1.305rem_+_0.66vw)] font-bold xl:text-[1.8rem] leading-[1.3] mb-3 !text-center">Drop Us a Line</h2>
         <p class="lead leading-[1.65] text-[0.9rem] font-medium !text-center mb-10">Reach out to us from our contact form and we will get back to you shortly.</p>
-        <%= form_with(url: contact_path, method: :post, class: "contact-form needs-validation") do |f| %>
+        <%= form_with(url: contact_form_send_email_path, method: :post, local: true, id: 'contact-form', class: "contact-form needs-validation") do |f| %>
           <div class="messages"></div>
           <div class="flex flex-wrap mx-[-10px]">
             <div class="xl:w-6/12 lg:w-6/12 md:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full">
@@ -85,7 +79,7 @@
             </div>
             <div class="w-full flex-[0_0_auto] px-[15px] max-w-full">
               <div class="form-floating relative !mb-4">
-                <%= f.text_area :message, class: "form-control relative block w-full text-[.75rem] font-medium text-[#60697b] bg-[#fefefe] bg-clip-padding border shadow-[0_0_1.25rem_rgba(30,34,40,0.04)] rounded-[0.4rem] border-solid border-[rgba(8,60,130,0.07)] transition-[border-color] duration-[0.15s] ease-in-out focus:text-[#60697b] focus:bg-[rgba(255,255,255,.03)] focus:shadow-[0_0_1.25rem_rgba(30,34,40,0.04),unset] focus:!border-[rgba(63,120,224,0.5)] focus-visible:!border-[rgba(63,120,224,0.5)] focus-visible:!outline-0 placeholder:text-[#959ca9] placeholder:opacity-100 m-0 !pr-9 p-[.6rem_1rem] h-[calc(2.5rem_+_2px)] min-h-[calc(2.5rem_+_2px)] leading-[1.25]", placeholder: "Your message", required: true, style: "height: 150px" %>
+                <%= f.text_field :message, class: "form-control relative block w-full text-[.75rem] font-medium text-[#60697b] bg-[#fefefe] bg-clip-padding border shadow-[0_0_1.25rem_rgba(30,34,40,0.04)] rounded-[0.4rem] border-solid border-[rgba(8,60,130,0.07)] transition-[border-color] duration-[0.15s] ease-in-out focus:text-[#60697b] focus:bg-[rgba(255,255,255,.03)] focus:shadow-[0_0_1.25rem_rgba(30,34,40,0.04),unset] focus:!border-[rgba(63,120,224,0.5)] focus-visible:!border-[rgba(63,120,224,0.5)] focus-visible:!outline-0 placeholder:text-[#959ca9] placeholder:opacity-100 m-0 !pr-9 p-[.6rem_1rem] h-[calc(2.5rem_+_2px)] min-h-[calc(2.5rem_+_2px)] leading-[1.25]", placeholder: "Your message", required: true, style: "height: 150px" %>
                 <label for="form_message" class="text-[#959ca9] mb-2 inline-block text-[.75rem] absolute z-[2] h-full overflow-hidden text-start text-ellipsis whitespace-nowrap pointer-events-none border origin-[0_0] px-4 py-[0.6rem] border-solid border-transparent left-0 top-0 font-Manrope">Message *</label>
               </div>
             </div>

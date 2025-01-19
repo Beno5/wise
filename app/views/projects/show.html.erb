@@ -4,10 +4,8 @@
       <div class="md:w-10/12 lg:w-8/12 xl:w-7/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto">
         <div class="post-header">
           <h1 class="text-xl md:text-2xl xl:text-3xl font-bold leading-tight !mb-3">
-  <%= "Navigating Cultural Waters: Zenos Holds an Interactive Intercultural Communication Workshop" %>
-</h1>
-
-          
+            <%= @project.title %>
+          </h1>
         </div>
         <!-- /.post-header -->
       </div>
@@ -19,18 +17,15 @@
     <div class="flex flex-wrap mx-[-15px]">
       <div class="w-full flex-[0_0_auto] px-[15px] max-w-full">
         <article class="mt-[-12.5rem]">
-<div class="!rounded-[.4rem] !mb-8 xl:!mb-[3.5rem] lg:!mb-[3.5rem] md:!mb-[3.5rem]">
-  <%= image_tag(@project.image, alt: @project.title, style: "width: 75%; max-width: none; height: auto;", class: "!rounded-[.4rem] mx-auto") %>
-</div>
-
-
-
+          <div class="!rounded-[.4rem] !mb-8 xl:!mb-[3.5rem] lg:!mb-[3.5rem] md:!mb-[3.5rem]">
+            <%= image_tag(@project.image, alt: @project.title, style: "width: 75%; max-width: none; height: auto;", class: "!rounded-[.4rem] mx-auto") %>
+          </div>
           <div class="flex flex-wrap mx-[-15px]">
             <div class="xl:w-10/12 xl:!ml-[8.33333333%] lg:w-10/12 lg:!ml-[8.33333333%] w-full flex-[0_0_auto] px-[15px] max-w-full">
               <h2 class="text-[calc(1.265rem_+_0.18vw)] font-bold xl:text-[1.4rem] leading-[1.35] mb-4">About the Project</h2>
               <div class="flex flex-wrap mx-0">
                 <div class="xl:w-9/12 lg:w-9/12 md:w-9/12 w-full flex-[0_0_auto] max-w-full">
-                  <p><%= @project.content %></p>
+                  <p><%= @project.content.html_safe %></p>
                 </div>
                 <div class="xl:w-2/12 lg:w-2/12 md:w-2/12 w-full flex-[0_0_auto] max-w-full !ml-auto">
                   <ul class="pl-0 list-none">
@@ -38,6 +33,14 @@
                       <h5 class="!mb-1">Date</h5>
                       <p><%= @project.date.strftime('%d %b %Y') if @project.date %></p>
                     </li>
+                    <% if user_signed_in? %>
+                      <li class="mt-4 flex gap-4">
+                        <%= link_to 'Edit', edit_project_path(@project), class: 'btn btn-primary !text-white !bg-[#3f78e0] hover:!bg-[#345aa3] !rounded-full !px-4 !py-2' %>
+                        <%= link_to 'Delete', project_path(@project), 
+    data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' }, 
+    class: 'btn btn-danger !text-white !bg-[#e44134] hover:!bg-[#c7322c] !rounded-full !px-4 !py-2' %>
+                      </li>
+                    <% end %>
                   </ul>
                 </div>
               </div>
@@ -55,4 +58,3 @@
     </div>
   </div>
 </div>
-<%= render 'shared/contact' %>

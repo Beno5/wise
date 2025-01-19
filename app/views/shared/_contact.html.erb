@@ -1,5 +1,5 @@
-<section class="wrapper image-wrapper bg-full bg-image bg-overlay bg-overlay-light-600 [background-size:100%] bg-[center_center] bg-no-repeat bg-scroll relative z-0" style="background-image: url('<%= asset_path('photos/bg23.png') %>');">  
-    <div class="container pt-20 xl:pt-28 lg:pt-28 md:pt-28 pb-16 xl:pb-20 lg:pb-20 md:pb-20">
+  <section class="wrapper image-wrapper bg-full bg-image bg-overlay bg-overlay-light-600" style="background-image: url('<%= asset_path("photos/bg23.png") %>');" data-image-src="<%= asset_path("photos/bg23.png") %>">
+  <div class="container pt-20 xl:pt-28 lg:pt-28 md:pt-28 pb-16 xl:pb-20 lg:pb-20 md:pb-20">
     <div class="flex flex-wrap mx-[-15px] mt-[-50px] xl:mx-[-35px] lg:mx-[-20px] items-center">
       <!-- Image Column -->
       <div class="xl:w-7/12 lg:w-7/12 flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] max-w-full xl:!order-2 lg:!order-2 !relative mt-[50px]">
@@ -19,7 +19,9 @@
           </span>
           Whether you're looking to develop new skills, explore new opportunities, or even launch your own business, we're dedicated to supporting women who are ready to embrace change and growth. At WISE, we believe that every woman has the potential to succeed, and we're here to provide the guidance, resources, and support you need to make your goals a reality.
         </p>
-        <p>Don't wait for the perfect moment, the best time to start is now. Reach out to us, and let's start the conversation about how we can help you unlock your full potential. Whether you're just starting out or looking to take your career or business to the next level, we're here to support you every step of the way.</p>
+        <p class="lead !text-[1.05rem] !leading-[1.6] font-medium">
+          <span class="font-bold">Don't wait for the perfect moment, the best time to start is now.</span> Reach out to us, and let's start the conversation about how we can help you unlock your full potential. Whether you're just starting out or looking to take your career or business to the next level, we're here to support you every step of the way.
+        </p>
         <%= link_to "Contact us", contact_path, 
             class: "btn btn-purple text-white !bg-[#747ed1] border-[#747ed1] hover:text-white hover:bg-[#747ed1] hover:border-[#747ed1] focus:shadow-[rgba(92,140,229,1)] active:text-white active:bg-[#747ed1] active:border-[#747ed1] disabled:text-white disabled:bg-[#747ed1] disabled:border-[#747ed1] !rounded-[50rem] !mt-2" %>
       </div>

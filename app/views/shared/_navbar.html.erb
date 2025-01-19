@@ -2,9 +2,7 @@
   <div class="container xl:flex-row lg:flex-row !flex-nowrap items-center">
     <div class="navbar-brand w-full">
       <%= link_to root_path do %>
-        <%= link_to root_path do %>
-          <%= image_tag("logo.png", alt: "image", style: "height: 100px; width: auto;") %>
-        <% end %>
+        <%= image_tag("logo.png", alt: "image", style: "height: 100px; width: auto;") %>
       <% end %>
     </div>
     <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
@@ -20,48 +18,14 @@
           <li class="nav-item"><%= link_to 'Partnership', partnership_path, class: "nav-link" %></li>
           <li class="nav-item"><%= link_to 'Contact', contact_path, class: "nav-link" %></li>
         </ul>
-        <!-- /.navbar-nav -->
-        <div class="offcanvas-footer xl:hidden lg:hidden">
-          <div>
-            <%= mail_to 'info@wise.com', 'info@wise.com', class: 'link-inverse' %>
-            <br>
-            +43 6704049129<br>
-            <nav class="nav social social-white mt-4">
-              <%= link_to '#', class: "text-[#cacaca] text-[1rem]" do %>
-                <i class="uil uil-twitter !text-white text-[1rem]"></i>
-              <% end %>
-              <%= link_to '#', class: "text-[#cacaca] text-[1rem]" do %>
-                <i class="uil uil-facebook-f !text-white text-[1rem]"></i>
-              <% end %>
-              <%= link_to '#', class: "text-[#cacaca] text-[1rem]" do %>
-                <i class="uil uil-instagram !text-white text-[1rem]"></i>
-              <% end %>
-            </nav>
-          </div>
-        </div>
       </div>
     </div>
-    <div class="navbar-other w-full !flex !ml-auto" style="visibility: hidden;">
-      <ul class="navbar-nav !flex-row !items-center !ml-auto">
-        <li class="nav-item dropdown language-select uppercase group">
-          <%= link_to '#', class: "nav-link dropdown-toggle", data: { bs_toggle: "dropdown" }, role: "button", aria: { expanded: "false" } do %>
-            En
+    <div class="navbar-other w-full flex justify-end items-center ml-auto">
+      <ul class="navbar-nav flex-row items-center">
+        <% if user_signed_in? %>
+          <li class="nav-item">
+            <%= link_to 'Log Out', destroy_user_session_path, data: { turbo_method: :delete }, class: "nav-link text-[#343f52] hover:text-[#3f78e0]" %>
           <% end %>
-          <ul class="dropdown-menu">
-            <li class="nav-item"><%= link_to 'English', '#', class: "dropdown-item hover:!text-[#605dba]" %></li>
-            <li class="nav-item"><%= link_to 'Deutsch', '#', class: "dropdown-item hover:!text-[#605dba]" %></li>
-            <li class="nav-item"><%= link_to 'Español', '#', class: "dropdown-item hover:!text-[#605dba]" %></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <%= link_to '#offcanvas-info', class: "nav-link", data: { bs_toggle: "offcanvas" } do %>
-            <i class="uil uil-info-circle !text-[1.1rem] hover:!text-[#605dba]"></i>
-          <% end %>
-        </li>
-        <li class="nav-item xl:hidden lg:hidden">
-          <button class="hamburger offcanvas-nav-btn" data-bs-toggle="offcanvas" data-bs-target=".offcanvas-nav">
-            <span></span>
-          </button>
         </li>
       </ul>
     </div>

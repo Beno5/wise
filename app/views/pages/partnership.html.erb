@@ -25,9 +25,9 @@
         <div class="swiper-wrapper ticker">
           <!-- Loop through the images -->
           <% (1..6).each do |i| %>
-<div class="swiper-slide px-5">
-  <%= image_tag("logo-#{i}.png", alt: "image", class: "!w-full !h-auto", style: "max-height: 100px; max-width: 100px;") %>
-</div>
+            <div class="swiper-slide px-5">
+              <%= image_tag("logo-#{i}.png", alt: "image", class: "!w-full !h-auto", style: "max-height: 100px; max-width: 100px;") %>
+            </div>
           <% end %>
         </div>
         <!--/.swiper-wrapper -->
@@ -38,4 +38,3 @@
   </div>
 </section>
 <!-- /section -->
-
