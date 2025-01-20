@@ -15,7 +15,7 @@
           <li class="nav-item"><%= link_to 'Home', root_path, class: "nav-link" %></li>
           <li class="nav-item"><%= link_to 'About Us', about_us_path, class: "nav-link" %></li>
           <li class="nav-item"><%= link_to 'Projects', projects_path, class: "nav-link" %></li>
-          <li class="nav-item"><%= link_to 'Partnership', partnership_path, class: "nav-link" %></li>
+          <li class="nav-item"><%= link_to 'Partnership', partnership_path, class: "nav-link", data: { turbo: false } %></li>
           <li class="nav-item"><%= link_to 'Contact', contact_path, class: "nav-link" %></li>
         </ul>
       </div>
