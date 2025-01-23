@@ -12,13 +12,13 @@
       <%= image_tag("svg/doodle5.svg", class: "h-14 !absolute hidden xl:block lg:block", style: "bottom: -50%; right: 5%", alt: "doodle") %>
     </h2>
     <% if user_signed_in? %>
-<%= link_to 'Create New Project', new_project_path, class: 'btn btn-mypurple !rounded-full !px-6 !py-2' %>
+<%= link_to 'Create New Project', new_project_path, class: 'btn btn-mypurple !rounded-full !px-6 !py-2', data: { turbo: false } %>
     <% end %>
     <div class="flex flex-wrap gap-6 mt-10">
       <% @projects.each do |project| %>
         <div class="md:w-6/12 lg:w-4/12 xl:w-4/12 bg-white rounded-lg shadow-lg overflow-hidden">
           <figure class="card-img-top overlay overlay-1 hover-scale group">
-            <%= link_to project_path(project) do %>
+            <%= link_to project_path(project), data: { turbo: false } do %>
               <%= image_tag project.image, alt: project.title, class: "!transition-all !duration-[0.35s] !ease-in-out group-hover:scale-105 w-full h-[200px] object-cover" %>
             <% end %>
             <figcaption class="group-hover:opacity-100 absolute w-full h-full opacity-0 text-center px-4 py-3 inset-0 z-[5] pointer-events-none p-2">
@@ -27,7 +27,7 @@
           </figure>
           <div class="p-6">
             <h2 class="text-lg font-bold text-[#343f52] hover:text-[#3f78e0] mb-2">
-              <%= link_to project.title.html_safe, project_path(project) %>
+              <%= link_to project.title.html_safe, project_path(project), data: { turbo: false } %>
             </h2>
             <p class="text-sm text-[#aab0bc] mb-4">
               <%= truncate(project.content.html_safe, length: 100) %>

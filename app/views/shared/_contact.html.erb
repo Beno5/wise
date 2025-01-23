@@ -1,4 +1,3 @@
-  
 <section class="wrapper image-wrapper bg-full bg-image bg-overlay bg-overlay-light-600" style="background-image: url('<%= asset_path("photos/bg23.png") %>');" data-image-src="<%= asset_path("photos/bg23.png") %>">
   <div class="container pt-20 xl:pt-28 lg:pt-28 md:pt-28 pb-16 xl:pb-20 lg:pb-20 md:pb-20">
     <div class="flex flex-wrap mx-[-15px] mt-[-50px] xl:mx-[-35px] lg:mx-[-20px] items-center">
@@ -24,7 +23,7 @@
           <span class="text-bold-purple">Don't wait for the perfect moment, the best time to start is now</span>. Reach out to us, and let's start the conversation about how we can help you unlock your full potential. Whether you're just starting out or looking to take your career or business to the next level, we're here to support you every step of the way.
         </p>
         <%= link_to "Contact us", contact_path, 
-           class: "btn btn-mypurple !rounded-[50rem] !mt-2" %>
+           class: "btn btn-mypurple !rounded-[50rem] !mt-2", data: { turbo: false } %>
       </div>
     </div>
     <!--/.row -->

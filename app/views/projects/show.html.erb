@@ -35,7 +35,7 @@
                     </li>
                     <% if user_signed_in? %>
                       <li class="mt-4 flex gap-4">
-                        <%= link_to 'Edit', edit_project_path(@project), class: 'btn btn-primary !text-white !bg-[#3f78e0] hover:!bg-[#345aa3] !rounded-full !px-4 !py-2' %>
+                        <%= link_to 'Edit', edit_project_path(@project), class: 'btn btn-primary !text-white !bg-[#3f78e0] hover:!bg-[#345aa3] !rounded-full !px-4 !py-2', data: { turbo: false } %>
                         <%= link_to 'Delete', project_path(@project), 
     data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' }, 
     class: 'btn btn-danger !text-white !bg-[#e44134] hover:!bg-[#c7322c] !rounded-full !px-4 !py-2' %>
