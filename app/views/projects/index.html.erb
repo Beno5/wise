@@ -30,7 +30,7 @@
               <%= link_to project.title.html_safe, project_path(project), data: { turbo: false } %>
             </h2>
             <p class="text-sm text-[#aab0bc] mb-4">
-              <%= truncate(project.content.html_safe, length: 100) %>
+              <%= truncate(project.plain_content, length: 100) %>
             </p>
             <p class="text-xs text-[#aab0bc]">
               <i class="uil uil-calendar-alt"></i>
