@@ -1,0 +1,11 @@
+development:
+  cloud_name: "beno5"
+  api_key: "987495541455657"
+  api_secret: "9UCuhat5wttBeXEGJwueEyFa3Zw"
+  secure: true
+
+production:
+  cloud_name: "beno5"
+  api_key: "987495541455657"
+  api_secret: "9UCuhat5wttBeXEGJwueEyFa3Zw"
+  secure: true
