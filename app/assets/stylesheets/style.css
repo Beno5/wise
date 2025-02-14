@@ -35086,3 +35086,7 @@ blockquote.video-wrapper .video-content.icon-top:before {
     margin-top: 25px !important;
   }
 }
+
+.projects {
+  justify-content: space-around !important;
+}

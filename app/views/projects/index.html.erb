@@ -13,7 +13,7 @@
     <% if user_signed_in? %>
 <%= link_to 'Create New Project', new_project_path, class: 'btn btn-mypurple !rounded-full !px-6 !py-2', data: { turbo: false } %>
     <% end %>
-    <div class="flex flex-wrap gap-6 mt-10">
+    <div class="flex flex-wrap gap-6 mt-10 projects">
       <% @projects.each do |project| %>
         <div class="md:w-6/12 lg:w-4/12 xl:w-4/12 bg-white rounded-lg shadow-lg overflow-hidden">
           <figure class="card-img-top overlay overlay-1 hover-scale group">
