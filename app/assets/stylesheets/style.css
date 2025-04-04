@@ -16892,6 +16892,11 @@ table.shopping-cart td {
   background-image: radial-gradient(#fab758 2px, transparent 2.5px);
 }
 
+.bg-dot.mypurple {
+  background-image: radial-gradient(#763884 2px, transparent 2.5px);
+}
+
+
 .bg-dot.blue {
   background-image: radial-gradient(#3f78e0 2px, transparent 2.5px);
 }
@@ -35089,4 +35094,8 @@ blockquote.video-wrapper .video-content.icon-top:before {
 
 .projects {
   justify-content: space-around !important;
+}
+
+.min-height-275 {
+  min-height: 275px !important;
 }

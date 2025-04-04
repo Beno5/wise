@@ -1,14 +1,16 @@
 class ProjectsController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
 
-  before_action :set_project, only: [:show, :edit, :update, :destroy]
+  before_action :set_project, only: [:update, :destroy]
 
   def index
     @projects = Project.all
   end
 
-  def show; end
-
+  def show
+    @project = Project.friendly.find(params[:slug])
+  end
+  
   def new
     @project = Project.new
   end
@@ -22,8 +24,9 @@ class ProjectsController < ApplicationController
     end
   end
 
-  def edit; end
-
+  def edit
+    @project = Project.friendly.find(params[:slug])
+  end
   def update
     if @project.update(project_params)
       redirect_to @project, notice: 'Project was successfully updated.'

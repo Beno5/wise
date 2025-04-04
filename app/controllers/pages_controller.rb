@@ -7,6 +7,9 @@ class PagesController < ApplicationController
 
   def partnership
   end
+  
+  def learning
+  end
 
   def contact
   end
